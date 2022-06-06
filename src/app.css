@@ -1,0 +1,30 @@
+@import '@fontsource/poppins';
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+html {
+	@apply font-poppins;
+	/* font-family: 'Poppins', sans-serif; */
+}
+
+@media screen and (min-width: 1200px) {
+	:root {
+		--font-size: 19px;
+	}
+}
+
+section {
+	@apply px-2 md:px-4 py-8 md:py-12 lg:py-16 xl:py-20 2xl:py-24;
+	@apply container mx-auto;
+}
+
+.tippy-box {
+	@apply inline-block py-1 xl:py-1.5 px-2 xl:px-2.5;
+	@apply text-xxs md:text-xs text-center select-none;
+	@apply shadow-sm rounded-[4px];
+	@apply !max-w-[800px];
+	@apply dark:text-neutral-200 text-neutral-900;
+	@apply dark:bg-gray-900 bg-white;
+	@apply border border-neutral-200;
+}
